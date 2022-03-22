@@ -1,1 +1,4 @@
 # jq-10.xyz
+
+
+P0RT0F0LI0 TO WORK PLS HIRE ME
