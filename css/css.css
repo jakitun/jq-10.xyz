@@ -2,7 +2,7 @@
 /* don't forget to verify and change values on index file as well  */
 
 body {
-  font-family: "Helvetica", "Rubik", "Segoe UI", sans-serif;
+font-family: 'Azeret Mono', monospace;
   text-rendering: geometricPrecision;
   background-color: black;
     transparent 100%
@@ -13,12 +13,12 @@ body {
 
 a:link,
 a:visited {
-  color: #ffd800;
+  color: #8aff00;
   text-decoration: none;
 }
 
 a:hover {
-  color: #ff5a00;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -28,7 +28,8 @@ a:active {
 }
 
 #header {
-  width: 33%;
+  width: 66%;
+  padding-top: 10px;
   margin: auto;
   top: 10px;
   text-align: center;
@@ -53,32 +54,14 @@ a:active {
 }
 
 .about {
-  text-align: justify;
-  text-justify: inter-word;
+  text-align: center;
   width: 66%;
   /*min-width: 240px;*/
   /*min-height: 100px;*/
   font-size: 60%;
   margin: auto;
   background-color: none;
-  animation: blinkingText 5s infinite;
-}
-@keyframes blinkingText {
-  0% {
-    color: #4d4d4d;
-  }
-  49% {
-    color: #929292;
-  }
-  50% {
-    color: #929292;
-  }
-  99% {
-    color: #4d4d4d;
-  }
-  100% {
-    color: #4d4d4d;
-  }
+  color: white;
 }
 
 #links {
@@ -103,7 +86,6 @@ a:active {
 
 #container {
   max-height: 2550px;
-  /*border: 2px solid red;*/
 }
 
 #footer {
@@ -182,12 +164,12 @@ a:active {
   z-index: 3;
 }
 
-#GISEL {
+#freddy {
   left: 38%;
   top: 28%;
 }
 
-#skywalker {
+#videowkwk {
   left: 69.4%;
   top: 18.9%;
 }
