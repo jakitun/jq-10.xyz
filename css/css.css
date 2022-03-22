@@ -1,0 +1,373 @@
+/* search "CONTENT CLASSES" to edit page contents */
+/* don't forget to verify and change values on index file as well  */
+
+body {
+  font-family: "Helvetica", "Rubik", "Segoe UI", sans-serif;
+  text-rendering: geometricPrecision;
+  background-color: black;
+    transparent 100%
+  );
+  background-attachment: fixed;
+  max-height: 2500px;
+}
+
+a:link,
+a:visited {
+  color: #ffd800;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff5a00;
+  text-decoration: none;
+}
+
+a:active {
+  color: #383838;
+  text-decoration: none;
+}
+
+#header {
+  width: 33%;
+  margin: auto;
+  top: 10px;
+  text-align: center;
+  background-color: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.headertext {
+  color: #fff;
+  font-weight: bold;
+}
+
+.isitext {
+  color: #ffffff;
+  font-size: small;
+  text-align: center;
+}
+
+.about {
+  text-align: justify;
+  text-justify: inter-word;
+  width: 66%;
+  /*min-width: 240px;*/
+  /*min-height: 100px;*/
+  font-size: 60%;
+  margin: auto;
+  background-color: none;
+  animation: blinkingText 5s infinite;
+}
+@keyframes blinkingText {
+  0% {
+    color: #4d4d4d;
+  }
+  49% {
+    color: #929292;
+  }
+  50% {
+    color: #929292;
+  }
+  99% {
+    color: #4d4d4d;
+  }
+  100% {
+    color: #4d4d4d;
+  }
+}
+
+#links {
+  fill: #ffffff;
+  text-align: center;
+  width: 66%;
+  max-height: 14px;
+  font-size: 60%;
+  margin: auto;
+  color: white;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.svg {
+  height: 15px;
+}
+
+#container {
+  max-height: 2550px;
+  /*border: 2px solid red;*/
+}
+
+#footer {
+  position: fixed;
+  width: 100%;
+  height: 6em;
+  left: 0px;
+  bottom: 0px;
+  background-color: #222222;
+  text-align: center;
+  font-size: small;
+  font-weight: bold;
+  color: #575757;
+}
+
+#footer a:link,
+#footer a:visited {
+  color: #505050;
+  text-decoration: none;
+}
+
+#footer a:hover,
+#footer a:active {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#earthblast {
+  font-size: x-large;
+}
+
+.emojihidden {
+  display: none;
+}
+
+.emojilogo {
+  animation: fadein 5s;
+  -moz-animation: fadein 5s; /* Firefox */
+  -webkit-animation: fadein 5s; /* Safari and Chrome */
+  -o-animation: fadein 5s; /* Opera */
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.emojihover {
+  transform: scale(1.2);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.disabled {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  touch-action: none;
+}
+
+/* BEGIN CONTENT CLASSES */
+/* BEGIN CONTENT CLASSES */
+/* BEGIN CONTENT CLASSES */
+/* SET CONTENT POSITIONS AND LAYOUT IN THIS SECTION */
+/* vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv */
+
+/* baris satu */
+
+#urmomlol {
+  left: 50%;
+  top: 50%;
+  z-index: 3;
+}
+
+#GISEL {
+  left: 38%;
+  top: 28%;
+}
+
+#skywalker {
+  left: 69.4%;
+  top: 18.9%;
+}
+
+/* baris dua */
+
+#elements {
+  left: 5.4%;
+  top: 48%;
+}
+
+#rayray {
+  left: 32%;
+  top: 66%;
+}
+
+#ASTROFLORA {
+  left: 62.9%;
+  top: 46%;
+}
+
+/* baris tiga */
+
+#restart {
+  left: 1.3%;
+  top: 89%;
+}
+
+#wg {
+  left: 42.4%;
+  top: 88%;
+}
+
+#feltzine {
+  left: 69.9%;
+  top: 79%;
+}
+/*
+|
+|
+*/
+
+/* BEGIN INTERACTIVE CLASSES */
+/* these settings would set how things behave  */
+
+.draggable {
+  position: absolute;
+  margin: 0.1em;
+  width: 24%;
+  border-radius: 0.75em;
+  padding: 2%;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  touch-action: none;
+}
+
+.draggable.switch-bg {
+  background-size: 100%;
+}
+
+.draggable img {
+  width: 100%;
+  height: auto;
+  -webkit-transition: width 0.5s;
+  -moz-transition: width 0.5s;
+  -o-transition: width 0.5s;
+  transition: width 0.5s;
+}
+
+.draggable.switch-bg img {
+  width: 200%;
+  -webkit-transition: width 0.5s;
+  -moz-transition: width 0.5s;
+  -o-transition: width 0.5s;
+  transition: width 0.5s;
+}
+
+.draggable video {
+  width: 100%;
+  height: auto;
+
+  -webkit-transition: width 0.5s;
+  -moz-transition: width 0.5s;
+  -o-transition: width 0.5s;
+  transition: width 0.5s;
+}
+
+.draggable.switch-bg video {
+  width: 200%;
+  -webkit-transition: width 0.5s;
+  -moz-transition: width 0.5s;
+  -o-transition: width 0.5s;
+  transition: width 0.5s;
+}
+
+.draggable div {
+  display: none;
+  background-color: #212121d1;
+  text-align: left;
+  width: 120%;
+  padding: 4%;
+  left: 200px;
+  top: 20px;
+  font-size: x-small;
+  color: #c3c3c3;
+  margin: left;
+}
+
+.draggable.switch-bg div {
+  display: block;
+}
+
+.fadein {
+  /* everything under this class will fade in on load */
+  animation: fadein 3s;
+  -moz-animation: fadein 3s; /* Firefox */
+  -webkit-animation: fadein 3s; /* Safari and Chrome */
+  -o-animation: fadein 3s; /* Opera */
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadein {
+  /* Firefox */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadein {
+  /* Opera */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* boxer id for debug purposes */
+#boxer {
+  border: 2px solid red;
+  background-color: #2d2d2dec;
+  text-align: center;
+  width: 25%;
+  padding: 4%;
+  left: 200px;
+  top: 20px;
+  font-size: x-small;
+  color: #c3c3c3;
+  margin: auto;
+  /*
+  -webkit-transform: translate(0px, 0px);
+  transform: translate(0px, 0px); */
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
