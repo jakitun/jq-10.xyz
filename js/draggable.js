@@ -50,3 +50,4 @@ interact(".draggable").on("tap", function (event) {
   event.currentTarget.classList.toggle("switch-bg");
   event.preventDefault();
 });
+
