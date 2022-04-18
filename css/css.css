@@ -1,15 +1,20 @@
 /* NOTHING NEW UNDER THE SUN */
 
+/* width */
+::-webkit-scrollbar {
+width: 0px;
+}
+
+
+
+
 html {
   min-height: 100vh;
 }
 body {
-font-family: 'Azeret Mono', monospace;
+  font-family: "Azeret Mono", monospace;
   text-rendering: geometricPrecision;
   background-color: black;
-    transparent 100%
-  ;
-
   background-attachment: fixed;
   max-height: 100vh;
 }
@@ -30,12 +35,11 @@ a:active {
   text-decoration: none;
 }
 
+
+
 #header {
   font-size: 5em;
-  width: center;
-  margin: auto;
   text-align: center;
-  background-color: none;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -74,7 +78,6 @@ a:active {
 }
 
 #container {
-  
 }
 
 #footer {
@@ -102,7 +105,24 @@ a:active {
   text-decoration: none;
 }
 
-.disabled {
+.head {
+  text-align: center;
+  margin: auto;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  touch-action: none;
+}
+
+.cats {
+  position: absolute;
+  margin: 0.1em;
+  width: 24%;
+  border-radius: 0.75em;
+  padding: 2%;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -117,7 +137,7 @@ a:active {
 /* baris satu */
 
 #title-visual-arts {
-  font-size: 1.5em;
+  font-size: 1.25em;
   left: 60vw;
   top: 20vh;
   color: black;
@@ -143,10 +163,10 @@ a:active {
 /* baris dua */
 
 #title-logoworks {
-  
-  left: 6%;
-  top: 90%;
-  font-size: 1.5em;
+  font-size: 1.25em;
+  left: 6vw;
+  top: 90vh;
+
   color: black;
   -webkit-text-stroke: 0.5px #cefc03;
 }
@@ -168,51 +188,52 @@ a:active {
 #logo-3 {
   left: 36%;
   top: 94%;
- width: 5vw;
+  width: 5vw;
   object-fit: cover;
 }
 
 #logo-4 {
   left: 48%;
   top: 94%;
- width: 5vw;
+  width: 5vw;
   object-fit: cover;
 }
 
 #logo-5 {
   left: 12%;
   top: 115%;
- width: 5vw;
+  width: 5vw;
   object-fit: cover;
 }
 
 #logo-6 {
   left: 24%;
   top: 115%;
- width: 5vw;
+  width: 5vw;
   object-fit: cover;
 }
 
 #logo-7 {
   left: 36%;
   top: 115%;
- width: 5vw;
+  width: 5vw;
   object-fit: cover;
 }
 
 #logo-8 {
   left: 48%;
   top: 115%;
- width: 5vw;
+  width: 5vw;
   object-fit: cover;
 }
 
 /* baris tiga */
 
 #title-branding {
-  left: 60%;
-  top: 140%;
- font-size: 1.5em;
+  font-size: 1.25em;
+  left: 60vw;
+  top: 140vh;
+ 
   color: black;
   -webkit-text-stroke: 0.5px #cefc03;
 }
@@ -277,7 +298,7 @@ a:active {
 .draggable img {
   width: 100%;
   height: auto;
-  -webkit-transition: width 0.5s; 
+  -webkit-transition: width 0.5s;
   -moz-transition: width 0.5s;
   -o-transition: width 0.5s;
   transition: width 0.5s;
@@ -394,7 +415,6 @@ a:active {
   transition: all 0.5s;
 }
 
-
 .sideout {
   position: fixed;
   left: 500px;
@@ -404,38 +424,63 @@ a:active {
   text-align: center;
   position: fixed;
   left: 2vw;
-  top: 46vh;
+  top: 45vh;
   z-index: 0;
   cursor: pointer;
+  writing-mode: vertical-lr;
+  animation: mymove 1s infinite alternate;
+   
 }
-
 
 .hamburger h1 {
-  font-size: 1em; 
+  font-size: 1em;
   font-weight: 400;
-  color: white; 
-  writing-mode: vertical-rl
+  color: white;
+
+ 
 }
 
-
-.arrow {
-  position: fixed;
-  left: 4vw;
-  top: 52vh;
-  z-index: 0;
-  cursor: pointer;
-  animation: mymove 1s infinite alternate;
-
+.hamburger h2 {
+  font-size: 1em;
+  font-weight: 400;
+  color: #cefc03;
+  text-orientation: upright;
+  margin-left: -5%;
+  
 }
 
 @keyframes mymove {
-  from {left: 4%;}
-  to {left: 4.5%;}
-  {animation-timing-function: ease-in;}
-  
-
+  from {
+    left: 2vw;
+  }
+  to {
+    left: 2.5vw;
+  }
+   {
+    animation-timing-function: ease-in;
+  }
 }
 
+.tutup{
+  display: none;
+ text-align: center;
+  position: fixed;
+  left: -400px;
+  top: 40vh;
+  z-index: 4;
+  cursor: pointer;
+  writing-mode: vertical-lr;
+  transition: left 0.3s;
+  
+}
+
+
+
+.tutup h1 {
+    font-size: 1em;
+  font-weight: 400;
+  color: #cefc03;
+}
 
 
 .menu {
@@ -449,14 +494,12 @@ a:active {
   z-index: 4;
   overflow: scroll;
   overflow-x: hidden;
-  box-shadow:
-  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-  0 12.5px 10px rgba(0, 0, 0, 0.06),
-  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
-  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-  0 100px 80px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
 }
+
 
 .menu::-webkit-scrollbar {
   display: none;
@@ -464,8 +507,8 @@ a:active {
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .menu {
--ms-overflow-style: none;  /* IE and Edge */
-scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 .menu--open {
@@ -477,7 +520,6 @@ scrollbar-width: none;  /* Firefox */
   width: 100%;
   padding: 1rem 3rem;
   box-sizing: border-box;
-
 }
 
 .menu-item-1 {
@@ -503,11 +545,7 @@ scrollbar-width: none;  /* Firefox */
   padding-right: 26px;
   padding-bottom: 26px;
   box-sizing: border-box;
-
-
 }
-
-
 
 .menu-item-3 {
   color: rgb(0, 0, 0);
@@ -520,14 +558,14 @@ scrollbar-width: none;  /* Firefox */
   font-size: 15px;
 }
 
-.menu-item-3 span:after{
-  content:"\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0";
-    text-decoration:line-through;
+.menu-item-3 span:after {
+  content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0";
+  text-decoration: line-through;
 }
 
 .menu-item-3 li {
-  left:200px;
-  font-size:13px;
+  left: 200px;
+  font-size: 13px;
 }
 
 .menu-item-3a {
@@ -541,14 +579,14 @@ scrollbar-width: none;  /* Firefox */
   font-size: 15px;
 }
 
-.menu-item-3a span:after{
-  content:"\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0";
-    text-decoration:line-through;
+.menu-item-3a span:after {
+  content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0";
+  text-decoration: line-through;
 }
 
 .menu-item-3a li {
-  left:200px;
-  font-size:13px;
+  left: 200px;
+  font-size: 13px;
 }
 
 .menu-item-4 {
@@ -581,12 +619,103 @@ scrollbar-width: none;  /* Firefox */
 .menu-skills span {
   padding: 7px;
   border-radius: 25px;
-  margin-top:10px;
+  margin-top: 10px;
   margin-left: 2px;
-  border:1px solid rgb(0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
   color: rgb(0, 0, 0);
-  display:inline-block;
+  display: inline-block;
 }
+
+@media (max-width: 480px) {
+
+.draggable img {
+  width: 150%;
+}
+
+.draggable video {
+  width: 150%;
+}
+
+
+
+  #title-visual-arts {
+    font-size: 0.5em;
+    left: 50vw;
+  }
+
+  #title-logoworks {
+    font-size: 0.5em;
+    left: 30vw;
+  }
+
+  #title-branding {
+    font-size: 0.5em;
+    left: 30vw;
+  }
+
+.hamburger {
+  top: 40%;
+}
+
+.menu {
+  width: 90%;
+}
+
+.menu-item-1 {
+  font-size: 300%;
+}
+
+.menu-item-2 {
+  padding-bottom: 20px;
+}
+
+.menu-item-3 {
+  padding-top: 0px;
+}
+
+.menu-item-4 {
+  font-size: 11px;
+  padding-bottom: 10px;
+      padding-left: 0px;
+}
+
+.menu-item-3a {
+  padding-top: 0px;
+}
+
+.menu-skills {
+  padding-top: 0px;
+  padding-bottom: 20px;
+}
+
+.menu-item-3 span:after {
+  content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0";
+  text-decoration: line-through;
+}
+
+.menu-item-3a span:after {
+  content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0";
+  text-decoration: line-through;
+}
+
+
+
+.tutup {
+  display: inline;
+}
+
+
+  }
+
+
+
+}
+
+}
+
+
+
+
 
 /* can be useful itf
 .menu-item:hover {
@@ -595,4 +724,3 @@ scrollbar-width: none;  /* Firefox */
 }
 
 */
-

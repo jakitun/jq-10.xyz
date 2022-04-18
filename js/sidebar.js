@@ -3,15 +3,19 @@ $(document).ready(function(){
     var menu = $(".menu");
     var hamburger = $(".hamburger");
     var arrow = $(".arrow");
+    var tutup = $(".tutup");
     var menuOpen;
+
     
     function openMenu(){
       menu.css("left", "0px");
+      tutup.css("left", "90%");
       menuOpen = true;
     }
     
     function closeMenu(){
       menu.css("left", "-450px");
+      tutup.css("left", "-10%");
       menuOpen = false;
     }
     
@@ -42,6 +46,12 @@ $(document).ready(function(){
       }
     })
 
+    tutup.on({
+      click: function(){
+        toggleMenu();
+      }
+    })
+
     arrow.on({
       mouseenter: function(){
         openMenu();
@@ -55,11 +65,6 @@ $(document).ready(function(){
       
     });
     
-    arrow.on({
-      click: function(){
-        toggleMenu();
-      }
-    })
     
     
   
