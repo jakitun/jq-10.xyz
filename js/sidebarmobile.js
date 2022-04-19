@@ -1,21 +1,46 @@
-$(document).ready(function() {
+$(document).ready(function(){
+  
+    var menu = $(".menu");
+    var hamburgermobile = $(".hamburger-mobile");
+    var arrow = $(".arrow");
+    var tutup = $(".tutup");
+    var menuOpen;
 
-  // only small screens
-  if($(window).width() <= 600){
-    // show menu on swipe to right
-    $(document).on('swiperight', function(e) {
-      e.preventDefault();
-      $('.menu').animate({
-        left: '0px'
-      });
-    });
-    // hide menu on swipe to left
-    $(document).on('swipeleft',function(e){
-      e.preventDefault();
-      $('.menu').animate({
-        left: '-450px'
-      });
-    });
-  }
+    
+    function openMenu(){
+      menu.css("left", "0px");
+      tutup.css("left", "90%");
+      menuOpen = true;
+    }
+    
+    function closeMenu(){
+      menu.css("left", "-450px");
+      tutup.css("left", "-10%");
+      menuOpen = false;
+    }
+    
+    function toggleMenu(){
+      if (menuOpen) {
+        closeMenu();
+      } else {
+        openMenu();
+      }
+    }
+   
+    
+    hamburgermobile.on({
+      click: function(){
+        toggleMenu();
+      }
+    })
 
-});
+
+    tutup.on({
+      click: function(){
+        toggleMenu();
+      }
+    })
+
+    
+  
+  });
