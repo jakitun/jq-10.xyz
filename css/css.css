@@ -259,12 +259,12 @@ a:active {
 }
 
 #branding-5 {
-  left: 50%;
+  left: 40%;
   top: 150%;
 }
 
 #branding-6 {
-  left: 60%;
+  left: 40%;
   top: 150%;
 }
 
@@ -465,7 +465,7 @@ a:active {
   text-align: center;
   position: fixed;
   left: 2vw;
-  top: 45vh;
+  top: 40vh;
   z-index: 0;
   cursor: pointer;
   writing-mode: vertical-lr;
