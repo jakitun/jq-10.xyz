@@ -332,15 +332,14 @@ a:active {
 
 .draggable div {
   display: none;
-  background-color: #212121d1;
+  background-color: black;
   text-align: left;
-  width: 120%;
+  width: 150%;
   padding: 4%;
   left: 200px;
   top: 20px;
   font-size: x-small;
-  color: #c3c3c3;
-  margin: left;
+  color: white;
 }
 
 .draggable.switch-bg div {
@@ -441,6 +440,48 @@ a:active {
 }
 
 .hamburger h2 {
+  font-size: 1em;
+  font-weight: 400;
+  color: #cefc03;
+  text-orientation: upright;
+  margin-left: -5%;
+  
+}
+
+@keyframes mymove {
+  from {
+    left: 2vw;
+  }
+  to {
+    left: 2.5vw;
+  }
+   {
+    animation-timing-function: ease-in;
+  }
+}
+
+.hamburger-mobile {
+  display: none;
+  text-align: center;
+  position: fixed;
+  left: 2vw;
+  top: 45vh;
+  z-index: 0;
+  cursor: pointer;
+  writing-mode: vertical-lr;
+  animation: mymove 1s infinite alternate;
+   
+}
+
+.hamburger-mobile h1 {
+  font-size: 1em;
+  font-weight: 400;
+  color: white;
+
+ 
+}
+
+.hamburger-mobile h2 {
   font-size: 1em;
   font-weight: 400;
   color: #cefc03;
@@ -654,7 +695,11 @@ a:active {
   }
 
 .hamburger {
-  top: 40%;
+  display:  none;
+}
+
+.hamburger-mobile {
+  display: block;
 }
 
 .menu {

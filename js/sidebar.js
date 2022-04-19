@@ -46,11 +46,13 @@ $(document).ready(function(){
       }
     })
 
+
     tutup.on({
       click: function(){
         toggleMenu();
       }
     })
+
 
     arrow.on({
       mouseenter: function(){
