@@ -48,12 +48,12 @@ a:active {
   user-select: none;
 }
 
+
+
 .about {
   text-align: center;
-  width: center;
   font-size: 10%;
   margin-top: 25px;
-  background-color: none;
   color: white;
 }
 
@@ -137,11 +137,60 @@ a:active {
 /* baris satu */
 
 #title-visual-arts {
+  z-index: 40;
   font-size: 1.25em;
-  left: 60vw;
-  top: 20vh;
-  color: black;
+  left: 64vw;
+  top: 10vh;
+  color: transparent;
   -webkit-text-stroke: 0.5px #cefc03;
+}
+
+#floratech {
+  left: 10%;
+  top: 4%;
+}
+
+#akimbo {
+  left: 50%;
+  top: 15%;
+}
+
+#fragile {
+  left: 60%;
+  top: 66%;
+}
+
+#pray {
+  left: 39%;
+  top: 94%;
+}
+
+#wap {
+  left: 10%;
+  top: 90%;
+}
+
+
+#newyear {
+left: 40%;
+top: 50%;
+width: 12%;
+z-index: 10;
+}
+
+#newyearloop {
+  left: 25%;
+  top:  30%;
+}
+
+#radioactive {
+  left:  3%;
+  top: 64%;
+}
+
+#baracuda {
+  left: 69%;
+  top: 32%;
 }
 
 #urmomlol {
@@ -165,7 +214,7 @@ a:active {
 #title-logoworks {
   font-size: 1.25em;
   left: 6vw;
-  top: 90vh;
+  top: 150%;
 
   color: black;
   -webkit-text-stroke: 0.5px #cefc03;
@@ -173,56 +222,56 @@ a:active {
 
 #logo-1 {
   left: 12%;
-  top: 94%;
+  top: 160%;
   width: 5vw;
   object-fit: cover;
 }
 
 #logo-2 {
   left: 24%;
-  top: 94%;
+  top: 160%;
   width: 5vw;
   object-fit: cover;
 }
 
 #logo-3 {
   left: 36%;
-  top: 94%;
+  top: 160%;
   width: 5vw;
   object-fit: cover;
 }
 
 #logo-4 {
   left: 48%;
-  top: 94%;
+  top: 160%;
   width: 5vw;
   object-fit: cover;
 }
 
 #logo-5 {
   left: 12%;
-  top: 115%;
+  top: 160%;
   width: 5vw;
   object-fit: cover;
 }
 
 #logo-6 {
   left: 24%;
-  top: 115%;
+  top: 180%;
   width: 5vw;
   object-fit: cover;
 }
 
 #logo-7 {
   left: 36%;
-  top: 115%;
+  top: 180%;
   width: 5vw;
   object-fit: cover;
 }
 
 #logo-8 {
   left: 48%;
-  top: 115%;
+  top: 180%;
   width: 5vw;
   object-fit: cover;
 }
@@ -232,7 +281,7 @@ a:active {
 #title-branding {
   font-size: 1.25em;
   left: 60vw;
-  top: 140vh;
+  top: 200%;
  
   color: black;
   -webkit-text-stroke: 0.5px #cefc03;
@@ -240,32 +289,32 @@ a:active {
 
 #branding-1 {
   left: 10%;
-  top: 150%;
+  top: 210%;
 }
 
 #branding-2 {
   left: 20%;
-  top: 150%;
+  top: 210%;
 }
 
 #branding-3 {
   left: 30%;
-  top: 150%;
+  top: 210%;
 }
 
 #branding-4 {
   left: 40%;
-  top: 150%;
+  top: 210%;
 }
 
 #branding-5 {
   left: 40%;
-  top: 150%;
+  top: 210%;
 }
 
 #branding-6 {
   left: 40%;
-  top: 150%;
+  top: 210%;
 }
 
 /*
@@ -279,7 +328,7 @@ a:active {
 .draggable {
   position: absolute;
   margin: 0.1em;
-  width: 24%;
+  width: 20%;
   border-radius: 0.75em;
   padding: 2%;
   -webkit-touch-callout: none;
@@ -305,7 +354,7 @@ a:active {
 }
 
 .draggable.switch-bg img {
-  width: 200%;
+  width: 90vh;
   -webkit-transition: width 0.5s;
   -moz-transition: width 0.5s;
   -o-transition: width 0.5s;
@@ -323,7 +372,7 @@ a:active {
 }
 
 .draggable.switch-bg video {
-  width: 200%;
+  width: 90vh;
   -webkit-transition: width 0.5s;
   -moz-transition: width 0.5s;
   -o-transition: width 0.5s;
@@ -424,7 +473,7 @@ a:active {
   position: fixed;
   left: 2vw;
   top: 45vh;
-  z-index: 0;
+  z-index: 49;
   cursor: pointer;
   writing-mode: vertical-lr;
   animation: mymove 1s infinite alternate;
@@ -466,7 +515,7 @@ a:active {
   position: fixed;
   left: 2vw;
   top: 40vh;
-  z-index: 0;
+  z-index: 48;
   cursor: pointer;
   writing-mode: vertical-lr;
   animation: mymove 1s infinite alternate;
@@ -508,7 +557,7 @@ a:active {
   position: fixed;
   left: -400px;
   top: 40vh;
-  z-index: 4;
+  z-index: 47;
   cursor: pointer;
   writing-mode: vertical-lr;
   transition: left 0.3s;
@@ -532,7 +581,7 @@ a:active {
   top: 0;
   left: -450px;
   transition: left 0.3s;
-  z-index: 4;
+  z-index: 50;
   overflow: scroll;
   overflow-x: hidden;
   box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
@@ -673,6 +722,10 @@ a:active {
   width: 150%;
 }
 
+.draggable.switch-bg img {
+  width: 200%;
+}
+
 .draggable video {
   width: 150%;
 }
@@ -704,6 +757,7 @@ a:active {
 
 .menu {
   width: 90%;
+  z-index: 50;
 }
 
 .menu-item-1 {

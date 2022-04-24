@@ -9,7 +9,7 @@ $(document).ready(function(){
     
     function openMenu(){
       menu.css("left", "0px");
-      tutup.css("left", "90%");
+      tutup.css("left", "88%");
       menuOpen = true;
     }
     
