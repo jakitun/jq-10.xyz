@@ -55,6 +55,13 @@ a:active {
   font-size: 10%;
   margin-top: 25px;
   color: white;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
 }
 
 #links {
@@ -78,10 +85,13 @@ a:active {
 }
 
 #container {
+  height: 6000px;
 }
 
+
+
 #footer {
-  z-index: 0;
+  z-index: 899;
   position: fixed;
   width: 100%;
   left: 0px;
@@ -91,6 +101,13 @@ a:active {
   font-size: small;
   font-weight: 200;
   color: white;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
 }
 
 #footer a:link,
@@ -119,10 +136,7 @@ a:active {
 
 .cats {
   position: absolute;
-  margin: 0.1em;
-  width: 24%;
-  border-radius: 0.75em;
-  padding: 2%;
+  z-index: 888;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -130,17 +144,17 @@ a:active {
   -ms-user-select: none;
   user-select: none;
   touch-action: none;
+  pointer-events: none;
 }
 
 /* P0RT0F0LI0 */
 
-/* baris satu */
+/* VAS */
 
 #title-visual-arts {
-  z-index: 40;
   font-size: 1.25em;
   left: 64vw;
-  top: 10vh;
+  top: 12vh;
   color: transparent;
   -webkit-text-stroke: 0.5px #cefc03;
 }
@@ -148,6 +162,7 @@ a:active {
 #floratech {
   left: 10%;
   top: 4%;
+  z-index: 1;
 }
 
 #akimbo {
@@ -175,7 +190,7 @@ a:active {
 left: 40%;
 top: 50%;
 width: 12%;
-z-index: 10;
+z-index: 2;
 }
 
 #newyearloop {
@@ -189,148 +204,239 @@ z-index: 10;
 }
 
 #baracuda {
-  left: 69%;
+  left: 76%;
   top: 32%;
 }
 
-#urmomlol {
-  left: 20%;
-  top: 50%;
-  z-index: 3;
+#hindia {
+  left: 61%;
+  top: 115%;
+  width: 30%;
 }
 
-#freddy {
-  left: 38%;
-  top: 28%;
-}
 
-#videowkwk {
-  left: 50%;
-  top: 50%;
-}
+/* BRANDS */
 
-/* baris dua */
-
-#title-logoworks {
+#title-branding {
   font-size: 1.25em;
   left: 6vw;
   top: 150%;
 
-  color: black;
+  color: transparent;
   -webkit-text-stroke: 0.5px #cefc03;
 }
 
-#logo-1 {
-  left: 12%;
-  top: 160%;
-  width: 5vw;
-  object-fit: cover;
+
+
+#fbg1 {
+  left: 15%;
+  top: 170%;
 }
 
-#logo-2 {
-  left: 24%;
-  top: 160%;
-  width: 5vw;
-  object-fit: cover;
+#fbg2 {
+  left: 40%;
+  top: 170%;
 }
 
-#logo-3 {
-  left: 36%;
-  top: 160%;
-  width: 5vw;
-  object-fit: cover;
+#fbg3 {
+  left: 65%;
+  top: 170%;
 }
 
-#logo-4 {
-  left: 48%;
-  top: 160%;
-  width: 5vw;
-  object-fit: cover;
-}
-
-#logo-5 {
-  left: 12%;
-  top: 160%;
-  width: 5vw;
-  object-fit: cover;
-}
-
-#logo-6 {
-  left: 24%;
-  top: 180%;
-  width: 5vw;
-  object-fit: cover;
-}
-
-#logo-7 {
-  left: 36%;
-  top: 180%;
-  width: 5vw;
-  object-fit: cover;
-}
-
-#logo-8 {
-  left: 48%;
-  top: 180%;
-  width: 5vw;
-  object-fit: cover;
-}
-
-/* baris tiga */
-
-#title-branding {
-  font-size: 1.25em;
-  left: 60vw;
+#tbs1 {
+  left: 15%;
   top: 200%;
- 
-  color: black;
+}
+
+#tbs2 {
+  left: 65%;
+  top: 208%;
+}
+
+#tbs3 {
+  left: 40%;
+  top: 215%;
+}
+
+#jqmp3-1 {
+  left: 30%;
+  top: 295%;
+  z-index: 4;
+}
+
+#jqmp3-2 {
+  left: 10%;
+  top: 290%;
+  width: 30%;
+}
+
+#sogumm1 {
+  left: 51%;
+  top: 260%;
+  width: 15%;
+  z-index: 2;
+}
+
+#sogumm2 {
+  left: 50%;
+  top: 283%;
+  width: 40%;
+}
+
+#boi1 {
+  left: 46%;
+  top: 312%;
+  width: 40%;
+}
+
+#boi2 {
+  left: 77%;
+  top: 314%;
+}
+
+#lmjc1 {
+  left: 40%;
+  top: 345%;
+}
+
+#lmjc2 {
+  left: 15%;
+  top: 345%;
+}
+
+#lmjc3 {
+  left: 65%;
+  top: 345%;
+}
+
+#b4-1 {
+  left: 15%;
+  top: 410%;
+}
+
+#b4-2 {
+  left: 40%;
+  top: 410%;
+}
+
+#b4-3 {
+  left: 65%;
+  top: 410%;
+}
+
+/* LOGOS */
+
+#title-logoworks {
+  font-size: 1.25em;
+  left: 35vw;
+  top: 470%;
+  color: transparent;
   -webkit-text-stroke: 0.5px #cefc03;
 }
 
-#branding-1 {
-  left: 10%;
-  top: 210%;
+
+#logo-1-fbg {
+  left: 18%;
+  top: 490%;
+  width: 15%;
+  
 }
 
-#branding-2 {
-  left: 20%;
-  top: 210%;
+#logo-2-tbs {
+  left: 42%;
+  top: 490%;
+  width: 15%;
+  
 }
 
-#branding-3 {
-  left: 30%;
-  top: 210%;
+#logo-3-kk {
+  left: 67%;
+  top: 490%;
+  width: 15%;
+  
 }
 
-#branding-4 {
-  left: 40%;
-  top: 210%;
+#logo-4-fbckc {
+  left: 18%;
+  top: 530%;
+  width: 15%;
+  
 }
 
-#branding-5 {
-  left: 40%;
-  top: 210%;
+#logo-5-fbc {
+  left: 42%;
+  top: 530%;
+  width: 15%;
+  
 }
 
-#branding-6 {
-  left: 40%;
-  top: 210%;
+#logo-6-tv {
+  left: 67%;
+  top: 530%;
+  width: 15%;
+  
 }
 
-/*
-|
-|
-*/
+#logo-7-b4 {
+  left: 18%;
+  top: 570%;
+  width: 15%;
+  
+}
 
-/* BEGIN INTERACTIVE CLASSES */
-/* these settings would set how things behave  */
+#logo-8-boi {
+  left: 42%;
+  top: 570%;
+  width: 15%;
+  
+}
+
+#logo-9-wanda {
+  left: 67%;
+  top: 570%;
+  width: 15%;
+  
+}
+
+#logo-10-pacco {
+  left: 18%;
+  top: 610%;
+  width: 15%;
+  
+}
+
+#logo-11-jki {
+  left: 42%;
+  top: 610%;
+  width: 15%;
+  
+}
+
+#logo-12-sal {
+  left: 67%;
+  top: 610%;
+  width: 15%;
+  
+}
+
+
+.feet {
+  position: absolute;
+  color: black;
+  width: 100px;
+  top: 700%;
+}
+
+
+/* DRAGGABLE */
+
 
 .draggable {
   position: absolute;
-  margin: 0.1em;
+  margin: 0.05em;
   width: 20%;
   border-radius: 0.75em;
-  padding: 2%;
+  padding: 0.5%;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -341,7 +447,7 @@ z-index: 10;
 }
 
 .draggable.switch-bg {
-  background-size: 100%;
+  background-size: 90vh;
 }
 
 .draggable img {
@@ -396,7 +502,6 @@ z-index: 10;
 }
 
 .fadein {
-  /* everything under this class will fade in on load */
   animation: fadein 1s;
   -moz-animation: fadein 1s; /* Firefox */
   -webkit-animation: fadein 1s; /* Safari and Chrome */
@@ -442,26 +547,6 @@ z-index: 10;
   }
 }
 
-/* boxer id for debug purposes */
-#boxer {
-  border: 2px solid red;
-  background-color: #2d2d2dec;
-  text-align: center;
-  width: 25%;
-  padding: 4%;
-  left: 200px;
-  top: 20px;
-  font-size: x-small;
-  color: #c3c3c3;
-  margin: auto;
-  /*
-  -webkit-transform: translate(0px, 0px);
-  transform: translate(0px, 0px); */
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
-}
 
 .sideout {
   position: fixed;
@@ -473,7 +558,7 @@ z-index: 10;
   position: fixed;
   left: 2vw;
   top: 45vh;
-  z-index: 49;
+  z-index: 990;
   cursor: pointer;
   writing-mode: vertical-lr;
   animation: mymove 1s infinite alternate;
@@ -515,10 +600,10 @@ z-index: 10;
   position: fixed;
   left: 2vw;
   top: 40vh;
-  z-index: 48;
+  z-index: 989;
   cursor: pointer;
   writing-mode: vertical-lr;
-  animation: mymove 1s infinite alternate;
+  animation: mymove-mobile 1s infinite alternate;
    
 }
 
@@ -535,16 +620,16 @@ z-index: 10;
   font-weight: 400;
   color: #cefc03;
   text-orientation: upright;
-  margin-left: -5%;
+  margin-left: -8%;
   
 }
 
-@keyframes mymove {
+@keyframes mymove-mobile {
   from {
-    left: 2vw;
+    left: 0.5vw;
   }
   to {
-    left: 2.5vw;
+    left: -2.0vw;
   }
    {
     animation-timing-function: ease-in;
@@ -557,7 +642,7 @@ z-index: 10;
   position: fixed;
   left: -400px;
   top: 40vh;
-  z-index: 47;
+  z-index: 995;
   cursor: pointer;
   writing-mode: vertical-lr;
   transition: left 0.3s;
@@ -581,7 +666,7 @@ z-index: 10;
   top: 0;
   left: -450px;
   transition: left 0.3s;
-  z-index: 50;
+  z-index: 996;
   overflow: scroll;
   overflow-x: hidden;
   box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
@@ -595,7 +680,6 @@ z-index: 10;
   display: none;
 }
 
-/* Hide scrollbar for IE, Edge and Firefox */
 .menu {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
@@ -716,35 +800,53 @@ z-index: 10;
   display: inline-block;
 }
 
+
+/*MOBILE VERSION*/ /*MOBILE VERSION*/ /*MOBILE VERSION*/
+/*MOBILE VERSION*/ /*MOBILE VERSION*/ /*MOBILE VERSION*/
+
+
 @media (max-width: 480px) {
 
+
+#container {
+  max-height: 3500px;
+}
+
 .draggable img {
-  width: 150%;
+  width: 125%;
 }
 
 .draggable.switch-bg img {
-  width: 200%;
+  width: 75vw;
 }
 
 .draggable video {
-  width: 150%;
+  width: 125%;
 }
+
+.draggable.switch-bg video {
+  width: 75vw;
+}
+
 
 
 
   #title-visual-arts {
     font-size: 0.5em;
-    left: 50vw;
+    left: 20vw;
+    top: 20vh;
   }
 
   #title-logoworks {
     font-size: 0.5em;
-    left: 30vw;
+    left: 20vw;
+    top: 380%;
   }
 
   #title-branding {
     font-size: 0.5em;
-    left: 30vw;
+    left: 35vw;
+    top: 92%;
   }
 
 .hamburger {
@@ -757,7 +859,7 @@ z-index: 10;
 
 .menu {
   width: 90%;
-  z-index: 50;
+  z-index: 999;
 }
 
 .menu-item-1 {
@@ -796,6 +898,271 @@ z-index: 10;
   content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0";
   text-decoration: line-through;
 }
+
+
+/*stupid code for responsive ikr*/
+/* P0RT0F0LI0 */
+
+/* VAS */
+
+
+#floratech {
+  left: 13%;
+  top: 28%;
+  z-index: 1;
+}
+
+#akimbo {
+  left: 40%;
+  top: 28%;
+}
+
+#fragile {
+  left: 67%;
+  top: 54%;
+}
+
+#pray {
+  left: 13%;
+  top: 54%;
+}
+
+#wap {
+  left: 40%;
+  top: 54%;
+}
+
+
+#newyear {
+left: 40%;
+top: 41%;
+width: 20%;
+z-index: 2;
+}
+
+#newyearloop {
+  left: 13%;
+  top:  41%;
+}
+
+#radioactive {
+  left:  67%;
+  top: 42%;
+}
+
+#baracuda {
+  left: 67%;
+  top: 28%;
+}
+
+#hindia {
+  left: 20%;
+  top: 70%;
+  width: 50%;
+}
+
+
+/* BRANDS */
+
+
+
+#fbg1 {
+  left: 20%;
+  top: 102%;
+  width: 50vw;
+}
+
+#fbg2 {
+  left: 20%;
+  top: 122%;
+  width: 50vw;
+}
+
+#fbg3 {
+  left: 20%;
+  top: 142%;
+  width: 50vw;
+}
+
+#tbs1 {
+  left: 25%;
+  top: 162%;
+}
+
+#tbs2 {
+  left: 40%;
+  top: 178%;
+}
+
+#tbs3 {
+  left: 58%;
+  top: 187%;
+}
+
+#jqmp3-1 {
+  left: 30%;
+  top: 224%;
+  z-index: 4;
+}
+
+#jqmp3-2 {
+  left: 21%;
+  top: 210%;
+  width: 50%;
+}
+
+#sogumm1 {
+  left: 25%;
+  top: 248%;
+  width: 15%;
+  z-index: 2;
+}
+
+#sogumm2 {
+  left: 20%;
+  top: 253%;
+  width: 50%;
+}
+
+#boi1 {
+  left: 20%;
+  top: 289%;
+  width: 50%;
+}
+
+#boi2 {
+  left: 20%;
+  top: 268%;
+  width: 50%;
+}
+
+#lmjc1 {
+  left: 40%;
+  top: 315%;
+}
+
+#lmjc2 {
+  left: 15%;
+  top: 305%;
+}
+
+#lmjc3 {
+  left: 65%;
+  top: 325%;
+}
+
+#b4-1 {
+  left: 15%;
+  top: 340%;
+}
+
+#b4-2 {
+  left: 33%;
+  top: 350%;
+  width: 30%;
+}
+
+#b4-3 {
+  left: 65%;
+  top: 360%;
+}
+
+/* LOGOS */
+
+
+#logo-1-fbg {
+  left: 18%;
+  top: 390%;
+  width: 15%;
+  
+}
+
+#logo-2-tbs {
+  left: 42%;
+  top: 390%;
+  width: 15%;
+  
+}
+
+#logo-3-kk {
+  left: 67%;
+  top: 390%;
+  width: 15%;
+  
+}
+
+#logo-4-fbckc {
+  left: 18%;
+  top: 405%;
+  width: 15%;
+  
+}
+
+#logo-5-fbc {
+  left: 42%;
+  top: 405%;
+  width: 15%;
+  
+}
+
+#logo-6-tv {
+  left: 67%;
+  top: 405%;
+  width: 15%;
+  
+}
+
+#logo-7-b4 {
+  left: 18%;
+  top: 420%;
+  width: 15%;
+  
+}
+
+#logo-8-boi {
+  left: 42%;
+  top: 420%;
+  width: 15%;
+  
+}
+
+#logo-9-wanda {
+  left: 67%;
+  top: 420%;
+  width: 15%;
+  
+}
+
+#logo-10-pacco {
+  left: 18%;
+  top: 435%;
+  width: 15%;
+  
+}
+
+#logo-11-jki {
+  left: 42%;
+  top: 435%;
+  width: 15%;
+  
+}
+
+#logo-12-sal {
+  left: 67%;
+  top: 435%;
+  width: 15%;
+  
+}
+
+
+.feet {
+  position: absolute;
+  color: black;
+  width: 100px;
+  top: 480%;
+}
+
+
 
 
 
