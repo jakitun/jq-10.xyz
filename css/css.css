@@ -4,21 +4,21 @@
                         |
           \    *        |     *    .  /
             \        *  |  .        /
-         .    \     ___---___     /    .  
-                \.--         --./     
+         .    \     ___---___     /    .
+                \.--         --./
      ~-_    *  ./               \.   *   _-~
         ~-_   /                   \   _-~     *
-   *       ~-/                     \-~        
+   *       ~-/                     \-~
      .      |                       |      .
-         * |   NOTHING NEW UNDER    | *     
+         * |   NOTHING NEW UNDER    | *
 -----------|         THE SUN        |-----------
-  .        |                        |        .    
+  .        |                        |        .
         *   |                       | *
            _-\         JQ          /-_    *
-     .  _-~ . \                   /   ~-_     
-     _-~       `\               /'*      ~-_  
+     .  _-~ . \                   /   ~-_
+     _-~       `\               /'*      ~-_
     ~           /`--___   ___--'\           ~
-           *  /        ---     .  \   
+           *  /        ---     .  \
             /     *     |           \
           /             |   *         \
                      .  |        .
@@ -745,6 +745,8 @@ a:active {
   text-decoration: line-through;
 }
 
+
+
 .menu-item-3a li {
   left: 200px;
   font-size: 13px;
@@ -786,6 +788,25 @@ a:active {
   color: rgb(0, 0, 0);
   display: inline-block;
 }
+
+.menu-item-space {  color: rgb(0, 0, 0);
+  width: 100%;
+  padding-top: 20px;
+  padding-left: 35px;
+  padding-right: 26px;
+  box-sizing: border-box;
+  font-size: 10px;}
+
+  .menu-item-space span {
+    padding: 7px;
+    border-radius: 25px;
+    margin-top: 10px;
+    margin-left: 2px;
+    border: 1px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    display: inline-block;
+  }
+
 
 /*MOBILE VERSION*/ /*MOBILE VERSION*/ /*MOBILE VERSION*/
 /*MOBILE VERSION*/ /*MOBILE VERSION*/ /*MOBILE VERSION*/
