@@ -1155,3 +1155,34 @@ a:active {
 }
 
 */
+
+/*VIDEOWORKS*/
+
+/* Grid Layout */
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  grid-auto-rows: 200px; /* 200px height */
+  grid-gap: 20px;
+  align-items: center; /* center align items vertically within the grid cells */
+  justify-content: center; /* center align items horizontally within the grid cells */
+}
+
+/* Video Thumbnails */
+.video-thumbnail {
+  width: 200px; /* fixed width */
+  height: 200px; /* fixed height */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Video Caption */
+.video-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 10px;
+  transition
