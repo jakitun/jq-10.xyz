@@ -48,17 +48,17 @@ body {
 
 a:link,
 a:visited {
-  color: #cefc03;
+  color: black;
   text-decoration: none;
 }
 
 a:hover {
-  color: #ffffff;
+  color: #cefc03;
   text-decoration: none;
 }
 
 a:active {
-  color: #383838;
+  color: #cefc03;
   text-decoration: none;
 }
 
@@ -71,6 +71,22 @@ a:active {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+#header a:link,
+#header a:visited {
+  color: #cefc03;
+  text-decoration: none;
+}
+
+#header a:hover {
+  color: #cefc03;
+  text-decoration: none;
+}
+
+#header a:active {
+  color: #cefc03;
+  text-decoration: none;
 }
 
 .about {
