@@ -73,7 +73,7 @@
 
 
 
-<html>
+
 <!-- SIDEBAR -->
   <div class="hamburger">
     <h1>curriculum vitae</h1>
@@ -467,6 +467,57 @@
           <script src="js/sidebarmobile.js"></script>
           <script src="js/zindex.js"></script>
           <script src="js/top.js"></script>
+          <script>
+        function calculateDuration(startDate, endDate) {
+          const start = new Date(startDate);
+          const end = endDate ? new Date(endDate) : new Date();
+
+          if (isNaN(start.getTime())) {
+            console.error(`Invalid start date: ${startDate}`);
+            return 'Invalid date';
+          }
+
+          const diffInMilliseconds = end - start;
+          const years = Math.floor(diffInMilliseconds / (365.25 * 24 * 60 * 60 * 1000));
+          const months = Math.floor((diffInMilliseconds % (365.25 * 24 * 60 * 60 * 1000)) / (30.44 * 24 * 60 * 60 * 1000));
+
+          return `${years} year${years !== 1 ? 's' : ''} ${months} month${months !== 1 ? 's' : ''}`;
+        }
+
+        function updatePresentDuration() {
+          const presentElements = document.querySelectorAll('.menu-item-4 ul p');
+
+          presentElements.forEach(element => {
+            const dateRangeMatch = element.innerText.match(/(\w{3} \d{4}) - Present/);
+
+            if (dateRangeMatch) {
+              const startDateString = dateRangeMatch[1]; // Extract the matched date part
+              const endDateString = new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'short' });
+              const durationText = calculateDuration(startDateString, endDateString);
+
+              console.log(`Start Date: ${startDateString}, End Date: ${endDateString}, Duration: ${durationText}`);
+
+              element.innerText = `${startDateString} - Present (${durationText})`;
+            }
+          });
+        }
+
+        // Call the function after the page is fully loaded
+        window.onload = function() {
+          updatePresentDuration();
+
+          // Update every 1 minute (adjust as needed)
+          setInterval(updatePresentDuration, 60000);
+        };
+      </script>
+
+
+
+
+
+
+
+
         </div>
       </div>
     </div>
